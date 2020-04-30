@@ -7,10 +7,13 @@
     <link href="style.css" rel="stylesheet" type="text/css" /> -->
     <style>
         body {
-            background-color: whitesmoke;
+
         }
         .header {
             text-align: center;
+        }
+        .form {
+
         }
     </style>
   </head>
@@ -58,6 +61,30 @@
     </p>
     <p> 
         If you want to be a part of my efforts and this campaign, please feel free to support my Kickstarter page, coming up soon. Also you can sign up for weekly updates and articles on the progress of the "See through the Smoke" campaign in the field below. Let's make this world a world worth living in and see through the smoke.
-    </p>
+    </p> <br>
+    <h3>
+        STTS Newsletter Signup
+    </h3>
+    <p> Please fill out the information below: </p>
+    <div></div>
+    <form class="form" action="/signupInfo.js"> 
+        <label for="fullname">Full Name: </label>
+        <input type="text" id="fullname" name="fullname"></input><br>
+        <label for="email">Email: </label>
+        <input type="text" id="email" name="email"></input><br>
+        <label for="smokingtime">How long have you been smoking? </label>
+        <input type='number' id='smokingtime' name="smokingtime"></input><br>
+        <label for="donationAMT">How much will you donate to STTS Campaign?</label>
+        <input type='radio' name='donation' value="$1">$1</input>
+        <input type='radio' name='donation' value="$5">$5</input>
+        <input type='radio' name='donation' value="$20">$20</input>
+        <input type='radio' name='donation' value="$50">$50</input>
+        <input type='radio' name='donation' value="$100">$100</input>
+        <input type='radio' name='donation' value="userinput">$50</input>
+        <input type='radio' name='donation' value="userinput">Enter custom amount:<input type="number" id='customdonation' name="customdonation"></input></input> <br><br>
+    </div>
+        <button type="submit">Submit</button>
+        <!-- Click the "Submit" button and the form-data will be sent to a page on the server called "signupInfo.js". -->
+    </form>
   </body>
 </html>
